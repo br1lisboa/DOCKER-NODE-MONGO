@@ -13,7 +13,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // conexión a la BD en mongo
-mongoose.connect(process.env.MONGO_URL, {
+mongoose.connect(process.env.MONGO_URI, {
   dbName: process.env.MONGO_DB_NAME,
   user: process.env.MONGO_USER,
   pass: process.env.MONGO_PASS,
