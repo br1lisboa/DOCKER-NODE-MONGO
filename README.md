@@ -35,7 +35,7 @@ cd proyecto-crud-node-mongo
 
    ```env
    PORT=3000
-   MONGO_URI=mongodb://localhost:27017/tu-base-de-datos
+   MONGO_URL=mongodb://localhost:27017/tu-base-de-datos
    ```
 
 3. Iniciar el servidor:

@@ -12,14 +12,14 @@ const app = express();
 // es un middleware que se utiliza para parser los json enviados en la request
 app.use(bodyParser.json());
 
-console.log("MONGO_URI:", process.env.MONGO_URI);
+console.log("MONGO_URL:", process.env.MONGO_URL);
 console.log("MONGO_DB_NAME:", process.env.MONGO_DB_NAME);
 console.log("MONGO_USER:", process.env.MONGO_USER);
 console.log("MONGO_PASS:", process.env.MONGO_PASS);
 
 // conexión a la BD en mongo
 mongoose
-  .connect(process.env.MONGO_URI, {
+  .connect(process.env.MONGO_URL, {
     dbName: process.env.MONGO_DB_NAME,
     user: process.env.MONGO_USER,
     pass: process.env.MONGO_PASS,

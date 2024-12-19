@@ -79,7 +79,7 @@ router.post("/", async (req, res) => {
 
     res.status(201).json({ message: "Recurso creado" });
   } catch (error) {
-    res.status(500).json({ message: error });
+    res.status(500).json({ message: error.message });
   }
 });
 
